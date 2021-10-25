@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Balayıcınız</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-sm-8 d-none d-sm-block" style="background:url('resim-1-slider.png') center center;background-size:cover;height: 80vh;
+        ">
+
+            <div class="divim" style="width: 100px;height: 40px;margin: 15px;margin-left: 60px;">
+                <img class="resmim" src="logo-beyaz.png" />
+            </div>
+            <div style="float: right;margin-top: 420px;text-align: center;margin-right: 20px;">
+                <div style="font-size: 22px;color: white; text-decoration: underline;">Villa Rosemary</div>
+                <div><button type="button" class="btn btn-dark" style="border-radius: 20px;font-size: 10px;">Villayı
+                        Görüntüle</button></div>
+            </div>
+
+        </div>
+
+
+
+        <div class="col-sm-4 col-sm-4-header">
+
+            <nav class="navbar navbar-expand-lg navbar-light" style="margin-left: 80px;">
+                <div class="container-fluid">
+                    <div class="divim d-block d-sm-none" style="width: 100px;height: 40px;">
+                        <img class="resmim" src="logo-beyaz.png" />
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+
+                                <a class="nav-link active" aria-current="page" href="#"><span
+                                        class="badge bg-secondary badge-nav">+4</span> Favoriler</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Rezarvasyonlarım</a>
+                            </li>
+                            <div id="exampleModal" class="modal">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Arama</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body col-sm-6" style="left: 25%; top: 25%;">
+                                            <p><input type="text" class="form-control" placeholder="Kiralık Villalar">
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i class="bi bi-search"></i></button>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="navbar-toggler-icon"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Anasayfa</a></li>
+                                    <li><a class="dropdown-item" href="#">Villa Seçenekleri</a></li>
+                                    <li><a class="dropdown-item" href="#">Bölgeler</a></li>
+                                    <li><a class="dropdown-item" href="#">Sık Sorulan Sorular</a></li>
+                                    <li><a class="dropdown-item" href="#">Yardım / Destek</a></li>
+                                    <li><a class="dropdown-item" href="#">İletişim</a></li>
+
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div style="text-align: center;margin-top: 100px;">
+                <input placeholder="Villa Tipleri" class="inp-header-large" type="text" onblur="(this.type='text')"
+                    id="date" /><br><br>
+                <input placeholder="Giriş Tarihi" class="inp-header" type="text" onfocus="(this.type='date')"
+                    onblur="(this.type='text')" id="date" />
+                <input placeholder="Çıkış Tarihi" class="inp-header" type="text" onfocus="(this.type='date')"
+                    onblur="(this.type='text')" id="date" /><br><br>
+                <input placeholder="Kişi Sayısı" class="inp-header-large" type="text" onblur="(this.type='text')"
+                    id="date" /><br><br><br><br>
+                <h7>Detaylı Arama</h7><br><br><br><br>
+                <button class="bt-header">Bizi Tatile Götür!</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <ul class="list-inline text-center p-3">
+        <li class="list-inline-item">Çalışma Saatleri: 9:30 - 23:50</li>
+        <li class="list-inline-item">• Whatsapp •</li>
+        <li class="list-inline-item">İletişim: +90 282 540 65 65</li>
+    </ul>
+
+
+    <div class="row m-5">
+        <h5>En Çok Tercih Edilenler</h5>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="1.jpg" class="d-block w-100" alt="...">
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-lg" style="padding: 10px;">
+                                        <li class="page-item">Sperro Villa <br>
+                                            <p style="font-size: 10px;">Antalya/Kas</p>
+                                        </li>&nbsp;
+                                        &nbsp;
+
+                                        <li class="page-item"> | <i class="bi bi-person"></i>
+                                            <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                class="bi bi-align-start"></i>
+
+                                            <h style="font-size: 10px;">2 Yatak Odası</h>&nbsp;
+                                            &nbsp;
+                                            | ₺5000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h> <button
+                                                style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="2.jpg" class="d-block w-100" alt="...">
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-lg" style="padding: 10px;">
+                                        <li class="page-item">Sperro Villa <br>
+                                            <p style="font-size: 10px;">Antalya/Kas</p>
+                                        </li>&nbsp;
+                                        &nbsp;
+
+                                        <li class="page-item"> | <i class="bi bi-person"></i>
+                                            <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                class="bi bi-align-start"></i>
+
+                                            <h style="font-size: 10px;">4 Yatak Odası</h>&nbsp;
+                                            &nbsp;
+                                            | ₺7850 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="3.jpg" class="d-block w-100" alt="...">
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-lg" style="padding: 10px;">
+                                        <li class="page-item">Sperro Villa <br>
+                                            <p style="font-size: 10px;">Antalya/Alanya</p>
+                                        </li>&nbsp;
+                                        &nbsp;
+
+                                        <li class="page-item"> | <i class="bi bi-person"></i>
+                                            <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                class="bi bi-align-start"></i>
+
+                                            <h style="font-size: 10px;">1 Yatak Odası</h>&nbsp;
+                                            &nbsp;
+                                            | ₺3000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="1.jpg" class="d-block w-100" alt="...">
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-lg" style="padding: 10px;">
+                                        <li class="page-item">Sperro Villa <br>
+                                            <p style="font-size: 10px;">Antalya/Kemer</p>
+                                        </li>&nbsp;
+                                        &nbsp;
+
+                                        <li class="page-item"> | <i class="bi bi-person"></i>
+                                            <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                class="bi bi-align-start"></i>
+
+                                            <h style="font-size: 10px;">3 Yatak Odası</h>&nbsp;
+                                            &nbsp;
+                                            | ₺9000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="2.jpg" class="d-block w-100" alt="...">
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-lg" style="padding: 10px;">
+                                        <li class="page-item">Sperro Villa <br>
+                                            <p style="font-size: 10px;">Muğla/Fethiye</p>
+                                        </li>&nbsp;
+                                        &nbsp;
+
+                                        <li class="page-item"> | <i class="bi bi-person"></i>
+                                            <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                class="bi bi-align-start"></i>
+
+                                            <h style="font-size: 10px;">3 Yatak Odası</h>&nbsp;
+                                            &nbsp;
+                                            | ₺8000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="3.jpg" class="d-block w-100" alt="...">
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-lg" style="padding: 10px;">
+                                        <li class="page-item">Sperro Villa <br>
+                                            <p style="font-size: 10px;">Antalya/Kas</p>
+                                        </li>&nbsp;
+                                        &nbsp;
+
+                                        <li class="page-item"> | <i class="bi bi-person"></i>
+                                            <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                class="bi bi-align-start"></i>
+
+                                            <h style="font-size: 10px;">2 Yatak Odası</h>&nbsp;
+                                            &nbsp;
+                                            | ₺5000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+            <br><br>
+        </div>
+
+        <div class="row">
+            <h5>Bölgeler</h5><br><br>
+            <div class="col-sm-2">
+                <div class="card" style="border-radius: 30px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Kalkan</h5>
+                        <hr>
+                        <p class="card-text text-center">plaja yakın</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="border-radius: 30px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Kaş</h5>
+                        <hr>
+                        <p class="card-text text-center">plaja yakın</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="border-radius: 30px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">İslamlar</h5>
+                        <hr>
+                        <p class="card-text text-center">plaja yakın</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="border-radius: 30px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Kalkan</h5>
+                        <hr>
+                        <p class="card-text text-center">plaja yakın</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="border-radius: 30px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Fethiye</h5>
+                        <hr>
+                        <p class="card-text text-center">plaja yakın</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="border-radius: 30px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Üzümlü</h5>
+                        <hr>
+                        <p class="card-text text-center">plaja yakın</p>
+
+                    </div>
+                </div><br><br>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <h5> Sizin İçin Sectiklerimiz <p style="float: right;"><i class="bi bi-arrow-repeat"
+                        style="color: orange;"></i> Villaları Yenile</p>
+            </h5><br><br>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="carouselExampleSlides" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="1.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">2 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺5000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h> <button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="2.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">4 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺7850 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="3.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Alanya</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">1 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺3000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlides"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlides"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="carouselExampleSlides1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="1.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">2 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺5000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h> <button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="2.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">4 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺7850 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="3.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Alanya</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">1 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺3000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlides1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlides1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="carouselExampleSlides2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="1.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">2 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺5000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h> <button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="2.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">4 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺7850 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="3.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Alanya</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">1 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺3000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlides2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlides2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <br><br>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="carouselExampleSlides3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="1.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">2 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺5000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h> <button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="2.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">4 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺7850 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="3.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Alanya</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">1 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺3000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlides3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlides3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="carouselExampleSlides4" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="1.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">2 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺5000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h> <button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="2.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">4 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺7850 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="3.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Alanya</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">1 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺3000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlides4"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlides4"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="carouselExampleSlides5" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="1.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">2 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺5000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h> <button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="2.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Kas</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">4 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺7850 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="3.jpg" class="d-block w-100" alt="...">
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg" style="padding: 10px;">
+                                            <li class="page-item">Sperro Villa <br>
+                                                <p style="font-size: 10px;">Antalya/Alanya</p>
+                                            </li>&nbsp;
+                                            &nbsp;
+
+                                            <li class="page-item"> | <i class="bi bi-person"></i>
+                                                <h style="font-size: 10px;">4 Kişilik </h> &nbsp;&nbsp;<i
+                                                    class="bi bi-align-start"></i>
+
+                                                <h style="font-size: 10px;">1 Yatak Odası</h>&nbsp;
+                                                &nbsp;
+                                                | ₺3000 <h style="font-size: 10px;">Başlayan Fiyatlarla</h><button
+                                                    style="background-image: url('favorilere-ekle.png');background-size:cover;height:  50px;width: 50px;border: none;border-radius: 20px;float: right;margin-left: 180px;"></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlides5"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlides5"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="color: red;margin-top: 20px;">Daha fazla villa göster</p>
+
+            <h5>Kısa Süreli Kiralıklar</h5>
+            <div class="row row-cols-1 row-cols-md-5 g-4 m-2">
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Ağustos</h5>
+                            <hr>
+                            <p class="">2 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">3</span></p>
+                            <p class="">3 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">5</span></p>
+                            <p class="">4 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">4</span></p>
+                            <p class="">5 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">5</span></p>
+                            <p class="">6 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">2</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Eylül</h5>
+                            <hr>
+                            <p class="">2 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">3</span></p>
+                            <p class="">3 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">5</span></p>
+                            <p class="">4 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">4</span></p>
+                            <p class="">5 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">5</span></p>
+                            <p class="">6 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">2</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Ekim</h5>
+                            <hr>
+                            <p class="">2 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">3</span></p>
+                            <p class="">3 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">5</span></p>
+                            <p class="">4 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">4</span></p>
+                            <p class="">5 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">5</span></p>
+                            <p class="">6 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">2</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Kasım</h5>
+                            <hr>
+                            <p class="">2 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">3</span></p>
+                            <p class="">3 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">5</span></p>
+                            <p class="">4 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">4</span></p>
+                            <p class="">5 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">5</span></p>
+                            <p class="">6 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">2</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Aralık</h5>
+                            <hr>
+                            <p class="">2 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">3</span></p>
+                            <p class="">3 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">5</span></p>
+                            <p class="">4 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">4</span></p>
+                            <p class="">5 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">5</span></p>
+                            <p class="">6 günlük evler <span class="badge"
+                                    style="color: white;background-color: black;float: right;">2</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="row m-2">
+            <h5 class="mt-5">Bizi Tanıyın</h5><br><br>
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        Hayalini kurduğunuz kiralık yazlık yazlıkcınızda!
+                        Yazlıkcınız, villa ve yazlık kiralama sektöründe 16 yıllık tecrübe ve 11098 belge numarasıyla A
+                        grubu yetkili bir TURSAB acentesidir. Sorunsuz ve kaliteli tatil yapmak isteyenlerin her zaman
+                        yanında.
+
+                        Kiralık yazlık tatilini güven ve huzurla taçlandıran Yazlıkcınız, stresten uzak bir tatil
+                        yapmanızı amaçlar. Bunun için gerekli tüm ön koşullar hazırlanmıştır.
+
+                        Kaliteli ve butik bir hizmet anlayışıyla hizmette sınır tanımıyoruz.
+
+                        Sevdikleriniz ile birlikte hayalini kurduğunuz villada tatil, güvenilir bir firmayla
+                        gerçekleşir. Yazlıkcınız olarak, portföyümüzde yer alan birbirinden güzel kiralık yazlık villa
+                        seçeneklerini inceleyebilirsiniz.
+
+                        Kiralık Yazlık alternatifleri ile hizmetinizde..
+                        Ekip olarak uzun yıllardır içinde bulunduğumuz turizm sektör tecrübemizden de faydalanarak,
+                        sizlere en iyi tatili sunmak adına villalarımızdaki her detayı düşünüyoruz.
+
+                        Portföyümüzde bulunan ve sizlerin de beğenisine sunduğumuz tüm villalar, önce bizim
+                        kontrolümüzden geçer. Konforunuz ve keyifli bir tatil geçirmeniz adına birçok kriteri bir arada
+                        barındıran villaları sizin için seçtik.
+
+                        Muhafazakar, lüks, deniz manzaralı, doğa manzaralı, çocuk havuzlu, kapalı ya da ısıtmalı havuzlu
+                        villa seçenekleriyle keyifli vakit geçirmek mümkün.
+
+                        Balkonlu, şömineli, teraslı, jakuzili, barbekülü, salıncaklı gibi seçenekler arasından
+                        istediğinizi seçin, keyfinize göre tatil yapın.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <br><br>
+        <div class="row m-2 justify-content-center">
+            <div class="col-sm-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Teklif Al</h5>
+                        <hr>
+                        <p class="card-text text-center">karar veremediysen</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;">Kiraya Ver</h5>
+                        <hr>
+                        <p class="card-text text-center">sizin için kiraya verelim</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #ccc; font-weight: 700;font-size: 18px;">Sık
+                            Sorulan Sorular</h5>
+                        <hr>
+                        <p class="card-text text-center">kafamda deli sorular</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5>Yorumlar</h5>
+
+    </div>
+    </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <p style="text-align: center;">E-BÜLTEN</p>
+            <p style="text-align: center;">Abone ol fırsatları kaçırma!</p>
+            <input type="text" class="form-control" placeholder="E-mail adresiniz..."
+                style="width: 250px;border-radius: 10px;margin: auto;">
+            <p style="text-align: center;"><i class="bi bi-instagram"></i> <i class="bi bi-whatsapp"></i></p>
+            <div>
+                <hr>
+            </div>
+            <p style="text-align: center;font-size: 13px;">HAKKIMIZDA&nbsp;&nbsp;&nbsp;GİZLİLİK ŞARTLARI&nbsp;&nbsp;
+                KİRALAMA SÖZLEŞMESİ</p>
+            <div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        Villacınız Seyahat Turizm Emlak LTD. ŞTİ.
+                        Kalkan Mahallesi Şehitler Caddesi
+                        No:69B Kaş / Antalya<br>
+                        <button type="button" class="btn btn-dark">HARİTADA GÖSTER</button>
+
+                    </div>
+                    <div class="col text-center">
+                        Bu site ödemedeki güvenliğiniz için
+                        256 bit SSL sertifikası ile şifrelenmektedir.
+                        <img src="güvenli odeme.png" />
+                    </div>
+                    <div class="col text-center">
+                        <img src="tursab.png" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
